@@ -1,0 +1,1296 @@
+[
+ {
+  "fn": "kinTruth",
+  "args": [
+   "0",
+   "0"
+  ],
+  "expected": "Counting 0 generations up from you and 0 generations up from them to the shared ancestor: you and them are the same person."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "0",
+   "1"
+  ],
+  "expected": "Counting 0 generations up from you and 1 generation up from them to the shared ancestor: they are your child."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "0",
+   "2"
+  ],
+  "expected": "Counting 0 generations up from you and 2 generations up from them to the shared ancestor: they are your grandchild."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "0",
+   "3"
+  ],
+  "expected": "Counting 0 generations up from you and 3 generations up from them to the shared ancestor: they are your great-grandchild."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "0",
+   "4"
+  ],
+  "expected": "Counting 0 generations up from you and 4 generations up from them to the shared ancestor: they are your 2nd great-grandchild."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "0",
+   "5"
+  ],
+  "expected": "Counting 0 generations up from you and 5 generations up from them to the shared ancestor: they are your 3rd great-grandchild."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "0",
+   "6"
+  ],
+  "expected": "Counting 0 generations up from you and 6 generations up from them to the shared ancestor: they are your 4th great-grandchild."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "0",
+   "7"
+  ],
+  "expected": "Counting 0 generations up from you and 7 generations up from them to the shared ancestor: they are your 5th great-grandchild."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "1",
+   "0"
+  ],
+  "expected": "Counting 1 generation up from you and 0 generations up from them to the shared ancestor: they are your parent."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "1",
+   "1"
+  ],
+  "expected": "Counting 1 generation up from you and 1 generation up from them to the shared ancestor: they are your sibling, full or half, which these counts cannot tell apart."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "1",
+   "2"
+  ],
+  "expected": "Counting 1 generation up from you and 2 generations up from them to the shared ancestor: they are your niece or nephew."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "1",
+   "3"
+  ],
+  "expected": "Counting 1 generation up from you and 3 generations up from them to the shared ancestor: they are your great-niece or great-nephew."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "1",
+   "4"
+  ],
+  "expected": "Counting 1 generation up from you and 4 generations up from them to the shared ancestor: they are your 2nd great-niece or great-nephew."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "1",
+   "5"
+  ],
+  "expected": "Counting 1 generation up from you and 5 generations up from them to the shared ancestor: they are your 3rd great-niece or great-nephew."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "1",
+   "6"
+  ],
+  "expected": "Counting 1 generation up from you and 6 generations up from them to the shared ancestor: they are your 4th great-niece or great-nephew."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "1",
+   "7"
+  ],
+  "expected": "Counting 1 generation up from you and 7 generations up from them to the shared ancestor: they are your 5th great-niece or great-nephew."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "2",
+   "0"
+  ],
+  "expected": "Counting 2 generations up from you and 0 generations up from them to the shared ancestor: they are your grandparent."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "2",
+   "1"
+  ],
+  "expected": "Counting 2 generations up from you and 1 generation up from them to the shared ancestor: they are your aunt or uncle."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "2",
+   "2"
+  ],
+  "expected": "Counting 2 generations up from you and 2 generations up from them to the shared ancestor: they are your 1st cousin, in the same generation as you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "2",
+   "3"
+  ],
+  "expected": "Counting 2 generations up from you and 3 generations up from them to the shared ancestor: they are your 1st cousin once removed, 1 generation younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "2",
+   "4"
+  ],
+  "expected": "Counting 2 generations up from you and 4 generations up from them to the shared ancestor: they are your 1st cousin twice removed, 2 generations younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "2",
+   "5"
+  ],
+  "expected": "Counting 2 generations up from you and 5 generations up from them to the shared ancestor: they are your 1st cousin 3 times removed, 3 generations younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "2",
+   "6"
+  ],
+  "expected": "Counting 2 generations up from you and 6 generations up from them to the shared ancestor: they are your 1st cousin 4 times removed, 4 generations younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "2",
+   "7"
+  ],
+  "expected": "Counting 2 generations up from you and 7 generations up from them to the shared ancestor: they are your 1st cousin 5 times removed, 5 generations younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "3",
+   "0"
+  ],
+  "expected": "Counting 3 generations up from you and 0 generations up from them to the shared ancestor: they are your great-grandparent."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "3",
+   "1"
+  ],
+  "expected": "Counting 3 generations up from you and 1 generation up from them to the shared ancestor: they are your great-aunt or great-uncle."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "3",
+   "2"
+  ],
+  "expected": "Counting 3 generations up from you and 2 generations up from them to the shared ancestor: they are your 1st cousin once removed, 1 generation older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "3",
+   "3"
+  ],
+  "expected": "Counting 3 generations up from you and 3 generations up from them to the shared ancestor: they are your 2nd cousin, in the same generation as you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "3",
+   "4"
+  ],
+  "expected": "Counting 3 generations up from you and 4 generations up from them to the shared ancestor: they are your 2nd cousin once removed, 1 generation younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "3",
+   "5"
+  ],
+  "expected": "Counting 3 generations up from you and 5 generations up from them to the shared ancestor: they are your 2nd cousin twice removed, 2 generations younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "3",
+   "6"
+  ],
+  "expected": "Counting 3 generations up from you and 6 generations up from them to the shared ancestor: they are your 2nd cousin 3 times removed, 3 generations younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "3",
+   "7"
+  ],
+  "expected": "Counting 3 generations up from you and 7 generations up from them to the shared ancestor: they are your 2nd cousin 4 times removed, 4 generations younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "4",
+   "0"
+  ],
+  "expected": "Counting 4 generations up from you and 0 generations up from them to the shared ancestor: they are your 2nd great-grandparent."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "4",
+   "1"
+  ],
+  "expected": "Counting 4 generations up from you and 1 generation up from them to the shared ancestor: they are your 2nd great-aunt or great-uncle."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "4",
+   "2"
+  ],
+  "expected": "Counting 4 generations up from you and 2 generations up from them to the shared ancestor: they are your 1st cousin twice removed, 2 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "4",
+   "3"
+  ],
+  "expected": "Counting 4 generations up from you and 3 generations up from them to the shared ancestor: they are your 2nd cousin once removed, 1 generation older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "4",
+   "4"
+  ],
+  "expected": "Counting 4 generations up from you and 4 generations up from them to the shared ancestor: they are your 3rd cousin, in the same generation as you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "4",
+   "5"
+  ],
+  "expected": "Counting 4 generations up from you and 5 generations up from them to the shared ancestor: they are your 3rd cousin once removed, 1 generation younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "4",
+   "6"
+  ],
+  "expected": "Counting 4 generations up from you and 6 generations up from them to the shared ancestor: they are your 3rd cousin twice removed, 2 generations younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "4",
+   "7"
+  ],
+  "expected": "Counting 4 generations up from you and 7 generations up from them to the shared ancestor: they are your 3rd cousin 3 times removed, 3 generations younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "5",
+   "0"
+  ],
+  "expected": "Counting 5 generations up from you and 0 generations up from them to the shared ancestor: they are your 3rd great-grandparent."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "5",
+   "1"
+  ],
+  "expected": "Counting 5 generations up from you and 1 generation up from them to the shared ancestor: they are your 3rd great-aunt or great-uncle."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "5",
+   "2"
+  ],
+  "expected": "Counting 5 generations up from you and 2 generations up from them to the shared ancestor: they are your 1st cousin 3 times removed, 3 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "5",
+   "3"
+  ],
+  "expected": "Counting 5 generations up from you and 3 generations up from them to the shared ancestor: they are your 2nd cousin twice removed, 2 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "5",
+   "4"
+  ],
+  "expected": "Counting 5 generations up from you and 4 generations up from them to the shared ancestor: they are your 3rd cousin once removed, 1 generation older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "5",
+   "5"
+  ],
+  "expected": "Counting 5 generations up from you and 5 generations up from them to the shared ancestor: they are your 4th cousin, in the same generation as you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "5",
+   "6"
+  ],
+  "expected": "Counting 5 generations up from you and 6 generations up from them to the shared ancestor: they are your 4th cousin once removed, 1 generation younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "5",
+   "7"
+  ],
+  "expected": "Counting 5 generations up from you and 7 generations up from them to the shared ancestor: they are your 4th cousin twice removed, 2 generations younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "6",
+   "0"
+  ],
+  "expected": "Counting 6 generations up from you and 0 generations up from them to the shared ancestor: they are your 4th great-grandparent."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "6",
+   "1"
+  ],
+  "expected": "Counting 6 generations up from you and 1 generation up from them to the shared ancestor: they are your 4th great-aunt or great-uncle."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "6",
+   "2"
+  ],
+  "expected": "Counting 6 generations up from you and 2 generations up from them to the shared ancestor: they are your 1st cousin 4 times removed, 4 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "6",
+   "3"
+  ],
+  "expected": "Counting 6 generations up from you and 3 generations up from them to the shared ancestor: they are your 2nd cousin 3 times removed, 3 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "6",
+   "4"
+  ],
+  "expected": "Counting 6 generations up from you and 4 generations up from them to the shared ancestor: they are your 3rd cousin twice removed, 2 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "6",
+   "5"
+  ],
+  "expected": "Counting 6 generations up from you and 5 generations up from them to the shared ancestor: they are your 4th cousin once removed, 1 generation older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "6",
+   "6"
+  ],
+  "expected": "Counting 6 generations up from you and 6 generations up from them to the shared ancestor: they are your 5th cousin, in the same generation as you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "6",
+   "7"
+  ],
+  "expected": "Counting 6 generations up from you and 7 generations up from them to the shared ancestor: they are your 5th cousin once removed, 1 generation younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "7",
+   "0"
+  ],
+  "expected": "Counting 7 generations up from you and 0 generations up from them to the shared ancestor: they are your 5th great-grandparent."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "7",
+   "1"
+  ],
+  "expected": "Counting 7 generations up from you and 1 generation up from them to the shared ancestor: they are your 5th great-aunt or great-uncle."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "7",
+   "2"
+  ],
+  "expected": "Counting 7 generations up from you and 2 generations up from them to the shared ancestor: they are your 1st cousin 5 times removed, 5 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "7",
+   "3"
+  ],
+  "expected": "Counting 7 generations up from you and 3 generations up from them to the shared ancestor: they are your 2nd cousin 4 times removed, 4 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "7",
+   "4"
+  ],
+  "expected": "Counting 7 generations up from you and 4 generations up from them to the shared ancestor: they are your 3rd cousin 3 times removed, 3 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "7",
+   "5"
+  ],
+  "expected": "Counting 7 generations up from you and 5 generations up from them to the shared ancestor: they are your 4th cousin twice removed, 2 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "7",
+   "6"
+  ],
+  "expected": "Counting 7 generations up from you and 6 generations up from them to the shared ancestor: they are your 5th cousin once removed, 1 generation older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "7",
+   "7"
+  ],
+  "expected": "Counting 7 generations up from you and 7 generations up from them to the shared ancestor: they are your 6th cousin, in the same generation as you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "30",
+   "30"
+  ],
+  "expected": "Counting 30 generations up from you and 30 generations up from them to the shared ancestor: they are your 29th cousin, in the same generation as you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "30",
+   "0"
+  ],
+  "expected": "Counting 30 generations up from you and 0 generations up from them to the shared ancestor: they are your 28th great-grandparent."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "0",
+   "30"
+  ],
+  "expected": "Counting 0 generations up from you and 30 generations up from them to the shared ancestor: they are your 28th great-grandchild."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "30",
+   "1"
+  ],
+  "expected": "Counting 30 generations up from you and 1 generation up from them to the shared ancestor: they are your 28th great-aunt or great-uncle."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "1",
+   "30"
+  ],
+  "expected": "Counting 1 generation up from you and 30 generations up from them to the shared ancestor: they are your 28th great-niece or great-nephew."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "11",
+   "11"
+  ],
+  "expected": "Counting 11 generations up from you and 11 generations up from them to the shared ancestor: they are your 10th cousin, in the same generation as you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "12",
+   "3"
+  ],
+  "expected": "Counting 12 generations up from you and 3 generations up from them to the shared ancestor: they are your 2nd cousin 9 times removed, 9 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "13",
+   "2"
+  ],
+  "expected": "Counting 13 generations up from you and 2 generations up from them to the shared ancestor: they are your 1st cousin 11 times removed, 11 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "21",
+   "22"
+  ],
+  "expected": "Counting 21 generations up from you and 22 generations up from them to the shared ancestor: they are your 20th cousin once removed, 1 generation younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "23",
+   "3"
+  ],
+  "expected": "Counting 23 generations up from you and 3 generations up from them to the shared ancestor: they are your 2nd cousin 20 times removed, 20 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "31",
+   "1"
+  ],
+  "expected": "ERR:each generation count must be a whole number from 0 to 30"
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "1",
+   "31"
+  ],
+  "expected": "ERR:each generation count must be a whole number from 0 to 30"
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "-1",
+   "1"
+  ],
+  "expected": "ERR:each generation count must be a whole number from 0 to 30"
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "1",
+   "x"
+  ],
+  "expected": "ERR:each generation count must be a whole number from 0 to 30"
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "",
+   "1"
+  ],
+  "expected": "ERR:each generation count must be a whole number from 0 to 30"
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "1.5",
+   "1"
+  ],
+  "expected": "ERR:each generation count must be a whole number from 0 to 30"
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   " 3 ",
+   " 2 "
+  ],
+  "expected": "Counting 3 generations up from you and 2 generations up from them to the shared ancestor: they are your 1st cousin once removed, 1 generation older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "03",
+   "02"
+  ],
+  "expected": "Counting 3 generations up from you and 2 generations up from them to the shared ancestor: they are your 1st cousin once removed, 1 generation older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "10000",
+   "1"
+  ],
+  "expected": "ERR:each generation count must be a whole number from 0 to 30"
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "27",
+   "25"
+  ],
+  "expected": "Counting 27 generations up from you and 25 generations up from them to the shared ancestor: they are your 24th cousin twice removed, 2 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "30",
+   "11"
+  ],
+  "expected": "Counting 30 generations up from you and 11 generations up from them to the shared ancestor: they are your 10th cousin 19 times removed, 19 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "15",
+   "29"
+  ],
+  "expected": "Counting 15 generations up from you and 29 generations up from them to the shared ancestor: they are your 14th cousin 14 times removed, 14 generations younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "13",
+   "14"
+  ],
+  "expected": "Counting 13 generations up from you and 14 generations up from them to the shared ancestor: they are your 12th cousin once removed, 1 generation younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "4",
+   "17"
+  ],
+  "expected": "Counting 4 generations up from you and 17 generations up from them to the shared ancestor: they are your 3rd cousin 13 times removed, 13 generations younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "29",
+   "8"
+  ],
+  "expected": "Counting 29 generations up from you and 8 generations up from them to the shared ancestor: they are your 7th cousin 21 times removed, 21 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "4",
+   "14"
+  ],
+  "expected": "Counting 4 generations up from you and 14 generations up from them to the shared ancestor: they are your 3rd cousin 10 times removed, 10 generations younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "27",
+   "16"
+  ],
+  "expected": "Counting 27 generations up from you and 16 generations up from them to the shared ancestor: they are your 15th cousin 11 times removed, 11 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "25",
+   "23"
+  ],
+  "expected": "Counting 25 generations up from you and 23 generations up from them to the shared ancestor: they are your 22nd cousin twice removed, 2 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "4",
+   "14"
+  ],
+  "expected": "Counting 4 generations up from you and 14 generations up from them to the shared ancestor: they are your 3rd cousin 10 times removed, 10 generations younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "25",
+   "20"
+  ],
+  "expected": "Counting 25 generations up from you and 20 generations up from them to the shared ancestor: they are your 19th cousin 5 times removed, 5 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "7",
+   "8"
+  ],
+  "expected": "Counting 7 generations up from you and 8 generations up from them to the shared ancestor: they are your 6th cousin once removed, 1 generation younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "0",
+   "17"
+  ],
+  "expected": "Counting 0 generations up from you and 17 generations up from them to the shared ancestor: they are your 15th great-grandchild."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "20",
+   "11"
+  ],
+  "expected": "Counting 20 generations up from you and 11 generations up from them to the shared ancestor: they are your 10th cousin 9 times removed, 9 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "29",
+   "10"
+  ],
+  "expected": "Counting 29 generations up from you and 10 generations up from them to the shared ancestor: they are your 9th cousin 19 times removed, 19 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "19",
+   "17"
+  ],
+  "expected": "Counting 19 generations up from you and 17 generations up from them to the shared ancestor: they are your 16th cousin twice removed, 2 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "23",
+   "5"
+  ],
+  "expected": "Counting 23 generations up from you and 5 generations up from them to the shared ancestor: they are your 4th cousin 18 times removed, 18 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "20",
+   "14"
+  ],
+  "expected": "Counting 20 generations up from you and 14 generations up from them to the shared ancestor: they are your 13th cousin 6 times removed, 6 generations older than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "7",
+   "11"
+  ],
+  "expected": "Counting 7 generations up from you and 11 generations up from them to the shared ancestor: they are your 6th cousin 4 times removed, 4 generations younger than you."
+ },
+ {
+  "fn": "kinTruth",
+  "args": [
+   "20",
+   "23"
+  ],
+  "expected": "Counting 20 generations up from you and 23 generations up from them to the shared ancestor: they are your 19th cousin 3 times removed, 3 generations younger than you."
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "1"
+  ],
+  "expected": "Generation 1 back (parents): at most 2 ancestors in that generation and 2 counting every generation up to it, if no ancestor is counted twice."
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "2"
+  ],
+  "expected": "Generation 2 back (grandparents): at most 4 ancestors in that generation and 6 counting every generation up to it, if no ancestor is counted twice."
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "3"
+  ],
+  "expected": "Generation 3 back (great-grandparents): at most 8 ancestors in that generation and 14 counting every generation up to it, if no ancestor is counted twice."
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "4"
+  ],
+  "expected": "Generation 4 back (2nd great-grandparents): at most 16 ancestors in that generation and 30 counting every generation up to it, if no ancestor is counted twice."
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "5"
+  ],
+  "expected": "Generation 5 back (3rd great-grandparents): at most 32 ancestors in that generation and 62 counting every generation up to it, if no ancestor is counted twice."
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "6"
+  ],
+  "expected": "Generation 6 back (4th great-grandparents): at most 64 ancestors in that generation and 126 counting every generation up to it, if no ancestor is counted twice."
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "7"
+  ],
+  "expected": "Generation 7 back (5th great-grandparents): at most 128 ancestors in that generation and 254 counting every generation up to it, if no ancestor is counted twice."
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "8"
+  ],
+  "expected": "Generation 8 back (6th great-grandparents): at most 256 ancestors in that generation and 510 counting every generation up to it, if no ancestor is counted twice."
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "9"
+  ],
+  "expected": "Generation 9 back (7th great-grandparents): at most 512 ancestors in that generation and 1022 counting every generation up to it, if no ancestor is counted twice."
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "10"
+  ],
+  "expected": "Generation 10 back (8th great-grandparents): at most 1024 ancestors in that generation and 2046 counting every generation up to it, if no ancestor is counted twice."
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "11"
+  ],
+  "expected": "Generation 11 back (9th great-grandparents): at most 2048 ancestors in that generation and 4094 counting every generation up to it, if no ancestor is counted twice."
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "12"
+  ],
+  "expected": "Generation 12 back (10th great-grandparents): at most 4096 ancestors in that generation and 8190 counting every generation up to it, if no ancestor is counted twice."
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "13"
+  ],
+  "expected": "Generation 13 back (11th great-grandparents): at most 8192 ancestors in that generation and 16382 counting every generation up to it, if no ancestor is counted twice."
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "14"
+  ],
+  "expected": "Generation 14 back (12th great-grandparents): at most 16384 ancestors in that generation and 32766 counting every generation up to it, if no ancestor is counted twice."
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "20"
+  ],
+  "expected": "Generation 20 back (18th great-grandparents): at most 1048576 ancestors in that generation and 2097150 counting every generation up to it, if no ancestor is counted twice."
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "21"
+  ],
+  "expected": "Generation 21 back (19th great-grandparents): at most 2097152 ancestors in that generation and 4194302 counting every generation up to it, if no ancestor is counted twice."
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "22"
+  ],
+  "expected": "Generation 22 back (20th great-grandparents): at most 4194304 ancestors in that generation and 8388606 counting every generation up to it, if no ancestor is counted twice."
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "23"
+  ],
+  "expected": "Generation 23 back (21st great-grandparents): at most 8388608 ancestors in that generation and 16777214 counting every generation up to it, if no ancestor is counted twice."
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "30"
+  ],
+  "expected": "Generation 30 back (28th great-grandparents): at most 1073741824 ancestors in that generation and 2147483646 counting every generation up to it, if no ancestor is counted twice."
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "0"
+  ],
+  "expected": "ERR:the generation must be a whole number from 1 to 30"
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "31"
+  ],
+  "expected": "ERR:the generation must be a whole number from 1 to 30"
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "x"
+  ],
+  "expected": "ERR:the generation must be a whole number from 1 to 30"
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   ""
+  ],
+  "expected": "ERR:the generation must be a whole number from 1 to 30"
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "1.5"
+  ],
+  "expected": "ERR:the generation must be a whole number from 1 to 30"
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   " 3 "
+  ],
+  "expected": "Generation 3 back (great-grandparents): at most 8 ancestors in that generation and 14 counting every generation up to it, if no ancestor is counted twice."
+ },
+ {
+  "fn": "ancestorTruth",
+  "args": [
+   "-2"
+  ],
+  "expected": "ERR:the generation must be a whole number from 1 to 30"
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1990",
+   "5",
+   "25"
+  ],
+  "expected": "Counting 5 generations back at 25 years each from a birth in 1990 reaches the year 1865, 125 years earlier."
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1990",
+   "1",
+   "1"
+  ],
+  "expected": "Counting 1 generation back at 1 year each from a birth in 1990 reaches the year 1989, 1 year earlier."
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1990",
+   "30",
+   "60"
+  ],
+  "expected": "Counting 30 generations back at 60 years each from a birth in 1990 reaches the year 190, 1800 years earlier."
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "2100",
+   "30",
+   "60"
+  ],
+  "expected": "Counting 30 generations back at 60 years each from a birth in 2100 reaches the year 300, 1800 years earlier."
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1",
+   "1",
+   "1"
+  ],
+  "expected": "ERR:that count of generations would reach before the year 1"
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1",
+   "1",
+   "2"
+  ],
+  "expected": "ERR:that count of generations would reach before the year 1"
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1800",
+   "30",
+   "60"
+  ],
+  "expected": "ERR:that count of generations would reach before the year 1"
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1800",
+   "29",
+   "60"
+  ],
+  "expected": "Counting 29 generations back at 60 years each from a birth in 1800 reaches the year 60, 1740 years earlier."
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1800",
+   "30",
+   "61"
+  ],
+  "expected": "ERR:the years per generation must be a whole number from 1 to 60"
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "2025",
+   "3",
+   "30"
+  ],
+  "expected": "Counting 3 generations back at 30 years each from a birth in 2025 reaches the year 1935, 90 years earlier."
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "0",
+   "3",
+   "30"
+  ],
+  "expected": "ERR:the birth year must be a whole number from 1 to 2100"
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "2101",
+   "3",
+   "30"
+  ],
+  "expected": "ERR:the birth year must be a whole number from 1 to 2100"
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1990",
+   "0",
+   "25"
+  ],
+  "expected": "ERR:the generation must be a whole number from 1 to 30"
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1990",
+   "5",
+   "0"
+  ],
+  "expected": "ERR:the years per generation must be a whole number from 1 to 60"
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "x",
+   "5",
+   "25"
+  ],
+  "expected": "ERR:the birth year must be a whole number from 1 to 2100"
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1990",
+   "",
+   "25"
+  ],
+  "expected": "ERR:the generation must be a whole number from 1 to 30"
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   " 1990 ",
+   "5",
+   "25"
+  ],
+  "expected": "Counting 5 generations back at 25 years each from a birth in 1990 reaches the year 1865, 125 years earlier."
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1781",
+   "4",
+   "34"
+  ],
+  "expected": "Counting 4 generations back at 34 years each from a birth in 1781 reaches the year 1645, 136 years earlier."
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1893",
+   "22",
+   "11"
+  ],
+  "expected": "Counting 22 generations back at 11 years each from a birth in 1893 reaches the year 1651, 242 years earlier."
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1600",
+   "1",
+   "45"
+  ],
+  "expected": "Counting 1 generation back at 45 years each from a birth in 1600 reaches the year 1555, 45 years earlier."
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1943",
+   "10",
+   "52"
+  ],
+  "expected": "Counting 10 generations back at 52 years each from a birth in 1943 reaches the year 1423, 520 years earlier."
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1802",
+   "11",
+   "15"
+  ],
+  "expected": "Counting 11 generations back at 15 years each from a birth in 1802 reaches the year 1637, 165 years earlier."
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1802",
+   "19",
+   "58"
+  ],
+  "expected": "Counting 19 generations back at 58 years each from a birth in 1802 reaches the year 700, 1102 years earlier."
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1723",
+   "15",
+   "43"
+  ],
+  "expected": "Counting 15 generations back at 43 years each from a birth in 1723 reaches the year 1078, 645 years earlier."
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1752",
+   "26",
+   "32"
+  ],
+  "expected": "Counting 26 generations back at 32 years each from a birth in 1752 reaches the year 920, 832 years earlier."
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1587",
+   "8",
+   "42"
+  ],
+  "expected": "Counting 8 generations back at 42 years each from a birth in 1587 reaches the year 1251, 336 years earlier."
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1995",
+   "20",
+   "51"
+  ],
+  "expected": "Counting 20 generations back at 51 years each from a birth in 1995 reaches the year 975, 1020 years earlier."
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1663",
+   "5",
+   "34"
+  ],
+  "expected": "Counting 5 generations back at 34 years each from a birth in 1663 reaches the year 1493, 170 years earlier."
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1649",
+   "1",
+   "32"
+  ],
+  "expected": "Counting 1 generation back at 32 years each from a birth in 1649 reaches the year 1617, 32 years earlier."
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "2001",
+   "30",
+   "38"
+  ],
+  "expected": "Counting 30 generations back at 38 years each from a birth in 2001 reaches the year 861, 1140 years earlier."
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1903",
+   "10",
+   "41"
+  ],
+  "expected": "Counting 10 generations back at 41 years each from a birth in 1903 reaches the year 1493, 410 years earlier."
+ },
+ {
+  "fn": "eraTruth",
+  "args": [
+   "1851",
+   "7",
+   "11"
+  ],
+  "expected": "Counting 7 generations back at 11 years each from a birth in 1851 reaches the year 1774, 77 years earlier."
+ }
+]
