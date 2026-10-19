@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kin Math - app</title>
+<style>
+  :root { --accent:#2f7a4f; --ink:#12301f; --paper:#f2f9f4; --soft:#dcefe2; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2rem 1.2rem; }
+  h1 { font-size:1.8rem; color:var(--accent); }
+  .boundary { margin:1rem 0 1.4rem; }
+  .panel { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1rem 1.1rem; margin-bottom:1.1rem; }
+  h2 { font-size:1.1rem; margin-bottom:.6rem; }
+  p.note { font-size:.9rem; margin-bottom:.4rem; }
+  label { display:block; font-size:.9rem; margin:.45rem 0 .1rem; }
+  input, select { width:100%; padding:.45rem .55rem; font-size:1rem; border:1px solid #9cc9ad; border-radius:6px; background:#fff; color:var(--ink); }
+    .row2 { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; }
+  .row3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:.6rem; }
+  .row4 { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; }
+  .out { margin-top:.7rem; font-size:.98rem; background:#fff; border:1px dashed #9cc9ad; border-radius:6px; padding:.6rem .7rem; min-height:2.4rem; overflow-wrap:anywhere; }
+  .out.err { border-color:#b03030; color:#8a1f1f; }
+  footer { margin-top:1.8rem; font-size:.85rem; color:#5a8a6c; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Kin Math</h1>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    This page names a relationship from the generation counts you type, using the common English genealogy convention, and counts ancestors by doubling. It does not know your family tree, anyone's DNA, other cultures' kinship terms, or any legal standing such as inheritance, marriage or citizenship, and it gives no verdict on whether a relationship exists or is allowed. Every number is your own entry.
+  </div>
+
+  <div class="panel">
+    <h2>The kin truth</h2>
+    <p class="note">Count the generations from you up to the nearest ancestor you share with them, and from them up to that same ancestor. A parent is 1 up, a grandparent 2 up, and 0 means the ancestor is that person.</p>
+    <div class="row2">
+      <div><label for="k-a">Up from you</label><input id="k-a" type="text" value="3"></div>
+      <div><label for="k-b">Up from them</label><input id="k-b" type="text" value="2"></div>
+    </div>
+    <div class="out" id="k-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The ancestor truth</h2>
+    <p class="note">The most ancestors a generation can hold, doubling each step back. Cousins marrying or any repeat ancestor makes the real count lower.</p>
+    <label for="a-g">Generation back</label><input id="a-g" type="text" value="3">
+    <div class="out" id="a-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The era truth</h2>
+    <p class="note">The year reached by stepping back a number of generations at a length you choose.</p>
+    <div class="row3">
+      <div><label for="e-y">Birth year</label><input id="e-y" type="text" value="1990"></div>
+      <div><label for="e-g">Generations</label><input id="e-g" type="text" value="5"></div>
+      <div><label for="e-p">Years each</label><input id="e-p" type="text" value="25"></div>
+    </div>
+    <div class="out" id="e-out"></div>
+  </div>
+
+  <footer>Kin Math is exact arithmetic over the counts you enter. <a href="index.html">Why it exists</a>.</footer>
+</main>
+<script src="engine.js"></script>
+<script>
+  function show(id, fn) {
+    const out = document.getElementById(id);
+    try { out.textContent = fn(); out.classList.remove("err"); }
+    catch (e) { out.textContent = e.message; out.classList.add("err"); }
+  }
+  function recalc() {
+    const v = (id) => document.getElementById(id).value;
+    show("k-out", () => kinTruth(v("k-a"), v("k-b")));
+    show("a-out", () => ancestorTruth(v("a-g")));
+    show("e-out", () => eraTruth(v("e-y"), v("e-g"), v("e-p")));
+  }
+  document.querySelectorAll("input, select").forEach((el) => {
+    el.addEventListener("input", recalc);
+    el.addEventListener("change", recalc);
+  });
+  recalc();
+</script>
+</body>
+</html>
